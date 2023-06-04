@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: ["./pages/**/*.html"],
   theme: {
@@ -26,7 +27,15 @@ module.exports = {
     fontFamily: {
       poppins: "'Poppins', sans-serif",
     },
-    extend: {},
+    extend: {
+      colors: {
+        header_bg: "#002138",
+        theme_color: "#1a68ce",
+        primary_color: "#0DC1D9",
+        text_color: "#5e6e82",
+        border_color: "#344050",
+      },
+    },
   },
   plugins: [],
 };

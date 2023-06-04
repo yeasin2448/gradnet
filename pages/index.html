@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- style  -->
     <link rel="stylesheet" type="" href="../public/css/custom.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../src/css/swiper-bundle.css" />
     <title>Gradnet</title>
   </head>
   <body>
@@ -24,63 +26,63 @@
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >About</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Contact</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Committee</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Businesses</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Directory</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Articles</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >News</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Stories</a
                   >
                 </li>
                 <li>
                   <a
                     href="#0"
-                    class="text-[#0000008c] text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                    class="text-[#0000008c] text-opacity-80 text-[13.5px] py-6 inline-block font font-semibold font-poppins hover:text-black transition-all"
                     >Offer</a
                   >
                 </li>
@@ -118,12 +120,672 @@
     <!-- header area ends  -->
 
     <!-- banner area start -->
-    <section class="banner_area lg:pt-[70px] pt-10 relative">
+    <section
+      class="banner_area lg:pt-[70px] pt-10 relative border-b border-border_color border-opacity-20 overflow-hidden"
+    >
       <div class="before_img absolute top-0 left-0">
-        <img src="../src/img/banner/shap/header-left-shape-1.svg" alt="" />
+        <img
+          class="w-[300px]"
+          src="../src/img/banner/shap/header-left-shape-1.svg"
+          alt=""
+        />
       </div>
-      <div class="container mx-auto"></div>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 items-center relative">
+          <div
+            class="banner_form py-10 lg:col-span-1 col-span-2 lg:order-1 order-2"
+          >
+            <div class="max-w-[450px] lg:ml-0 lg:mr-auto lg:mx-0 mx-auto">
+              <div class="banner_text">
+                <p
+                  class="text-[#5e6e82] mt-3 lg:text-lg text-base font-light font-poppins"
+                >
+                  Join the
+                  <strong class="font-medium">Alumni Association</strong> to
+                  reconnect with your friends, classmates, seniors &amp;
+                  juniors.
+                </p>
+              </div>
+              <div class="grid grid-cols-2 md:gap-5 gap-4 mt-4">
+                <div class="input_group">
+                  <label
+                    for="email"
+                    class="text-text_color text-sm font-normal font-poppins mb-1 inline-block"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="border border-border_color border-opacity-50 h-11 rounded-md p-2 w-full focus-visible:border-theme_color focus-visible:outline-none"
+                  />
+                </div>
+                <div class="input_group">
+                  <label
+                    for="password"
+                    class="text-text_color text-sm font-normal font-poppins mb-1 inline-block"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="border border-border_color border-opacity-50 h-11 rounded-md p-2 w-full focus-visible:border-theme_color focus-visible:outline-none"
+                  />
+                </div>
+                <div class="input_btn col-span-2">
+                  <button
+                    type="button"
+                    class="bg-theme_color py-3 px-6 text-white text-center text-sm font-normal font-poppins rounded-md w-full"
+                  >
+                    Login
+                  </button>
+                  <a
+                    href="#0"
+                    class="text-theme_color text-xs font-light font-poppins inline-block mt-2"
+                    >Forgot password</a
+                  >
+                  <button
+                    type="button"
+                    class="bg-theme_color bg-opacity-10 text-theme_color py-3 px-6 rounded-md text-sm w-full flex items-center justify-center gap-2 mt-4"
+                  >
+                    Create an account
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-[14px] h-[14px] text-theme_color"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="banner_thumb -mt-2 lg:col-span-1 col-span-2 lg:order-2 order-1"
+          >
+            <div class="lg:w-[50vw] w-[100vw] h-[450px] box-border relative">
+              <div
+                class="thumb_bg bg-[url('/src/img/banner/bg-1.png')] bg-left w-full h-full"
+              ></div>
+              <div
+                class="bg_left_shap absolute top-0 left-0 right-0 bottom-0 overflow-hidden lg:block hidden"
+              >
+                <svg
+                  viewBox="0 0 129 680"
+                  fill="none"
+                  class="w-auto h-full"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M 98.788 0.5 L 0 0.5 L 0 680 L -0.913 680 L 98.788 0.5 Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- banner area ends  -->
+
+    <!-- event area start -->
+    <section class="event_area py-10">
+      <div class="container mx-auto">
+        <div class="event_slider swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="ev_item border border-border_color border-opacity-50 rounded-md"
+              >
+                <div class="lg:p-8 p-5 lg:pb-5 pb-3">
+                  <div class="item_img">
+                    <img
+                      src="../src/img/event/default-event-cover.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item_text">
+                    <div
+                      class="bg-theme_color bg-opacity-30 text-theme_color text-xs font-normal font-poppins rounded-3xl px-2 py-[2px] inline-block"
+                    >
+                      <div class="flex items-center justify-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-theme_color"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                            />
+                          </svg>
+                        </i>
+                        Event
+                      </div>
+                    </div>
+                    <a
+                      href="#0"
+                      class="text-black lg:text-xl text-lg font-semibold font-poppins block"
+                    >
+                      Web winner
+                    </a>
+                    <div class="flex items-center gap-2 pt-2 pb-3">
+                      <i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6 text-theme_color"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                          />
+                        </svg>
+                      </i>
+                      <span
+                        class="text-text_color md:text-lg text-base font-medium font-poppins"
+                        >May 3, 2023</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="flex items-center gap-1">
+                        <strong class="text-theme_color">1</strong>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >People are going</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-text_color text-opacity-75"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </i>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >Registration closing in May 1, 2023</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="item_cate border-t border-t-border_color border-opacity-30 flex items-center divide-x divide-text_color divide-opacity-30"
+                >
+                  <a
+                    href="#0"
+                    class="text-theme_color text-base font-medium font-poppins w-1/2 text-center p-3"
+                    >Participate</a
+                  >
+                  <a
+                    href="#0"
+                    class="text-text_color text-base font-medium font-poppins flex items-center justify-center p-3 gap-2 w-1/2"
+                  >
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4 text-text_color"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                        />
+                      </svg>
+                    </i>
+                    Share
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="ev_item border border-border_color border-opacity-50 rounded-md"
+              >
+                <div class="lg:p-8 p-5 lg:pb-5 pb-3">
+                  <div class="item_img">
+                    <img
+                      src="../src/img/event/default-event-cover.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item_text">
+                    <div
+                      class="bg-theme_color bg-opacity-30 text-theme_color text-xs font-normal font-poppins rounded-3xl px-2 py-[2px] inline-block"
+                    >
+                      <div class="flex items-center justify-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-theme_color"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                            />
+                          </svg>
+                        </i>
+                        Event
+                      </div>
+                    </div>
+                    <a
+                      href="#0"
+                      class="text-black lg:text-xl text-lg font-semibold font-poppins block"
+                    >
+                      Web winner
+                    </a>
+                    <div class="flex items-center gap-2 pt-2 pb-3">
+                      <i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6 text-theme_color"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                          />
+                        </svg>
+                      </i>
+                      <span
+                        class="text-text_color md:text-lg text-base font-medium font-poppins"
+                        >May 3, 2023</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="flex items-center gap-1">
+                        <strong class="text-theme_color">1</strong>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >People are going</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-text_color text-opacity-75"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </i>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >Registration closing in May 1, 2023</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="item_cate border-t border-t-border_color border-opacity-30 flex items-center divide-x divide-text_color divide-opacity-30"
+                >
+                  <a
+                    href="#0"
+                    class="text-theme_color text-base font-medium font-poppins w-1/2 text-center p-3"
+                    >Participate</a
+                  >
+                  <a
+                    href="#0"
+                    class="text-text_color text-base font-medium font-poppins flex items-center justify-center p-3 gap-2 w-1/2"
+                  >
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4 text-text_color"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                        />
+                      </svg>
+                    </i>
+                    Share
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="ev_item border border-border_color border-opacity-50 rounded-md"
+              >
+                <div class="lg:p-8 p-5 lg:pb-5 pb-3">
+                  <div class="item_img">
+                    <img
+                      src="../src/img/event/default-event-cover.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item_text">
+                    <div
+                      class="bg-theme_color bg-opacity-30 text-theme_color text-xs font-normal font-poppins rounded-3xl px-2 py-[2px] inline-block"
+                    >
+                      <div class="flex items-center justify-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-theme_color"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                            />
+                          </svg>
+                        </i>
+                        Event
+                      </div>
+                    </div>
+                    <a
+                      href="#0"
+                      class="text-black lg:text-xl text-lg font-semibold font-poppins block"
+                    >
+                      Web winner
+                    </a>
+                    <div class="flex items-center gap-2 pt-2 pb-3">
+                      <i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6 text-theme_color"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                          />
+                        </svg>
+                      </i>
+                      <span
+                        class="text-text_color md:text-lg text-base font-medium font-poppins"
+                        >May 3, 2023</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="flex items-center gap-1">
+                        <strong class="text-theme_color">1</strong>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >People are going</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-text_color text-opacity-75"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </i>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >Registration closing in May 1, 2023</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="item_cate border-t border-t-border_color border-opacity-30 flex items-center divide-x divide-text_color divide-opacity-30"
+                >
+                  <a
+                    href="#0"
+                    class="text-theme_color text-base font-medium font-poppins w-1/2 text-center p-3"
+                    >Participate</a
+                  >
+                  <a
+                    href="#0"
+                    class="text-text_color text-base font-medium font-poppins flex items-center justify-center p-3 gap-2 w-1/2"
+                  >
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4 text-text_color"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                        />
+                      </svg>
+                    </i>
+                    Share
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="ev_item border border-border_color border-opacity-50 rounded-md"
+              >
+                <div class="lg:p-8 p-5 lg:pb-5 pb-3">
+                  <div class="item_img">
+                    <img
+                      src="../src/img/event/default-event-cover.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="item_text">
+                    <div
+                      class="bg-theme_color bg-opacity-30 text-theme_color text-xs font-normal font-poppins rounded-3xl px-2 py-[2px] inline-block"
+                    >
+                      <div class="flex items-center justify-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-theme_color"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                            />
+                          </svg>
+                        </i>
+                        Event
+                      </div>
+                    </div>
+                    <a
+                      href="#0"
+                      class="text-black lg:text-xl text-lg font-semibold font-poppins block"
+                    >
+                      Web winner
+                    </a>
+                    <div class="flex items-center gap-2 pt-2 pb-3">
+                      <i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6 text-theme_color"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+                          />
+                        </svg>
+                      </i>
+                      <span
+                        class="text-text_color md:text-lg text-base font-medium font-poppins"
+                        >May 3, 2023</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between gap-2">
+                      <div class="flex items-center gap-1">
+                        <strong class="text-theme_color">1</strong>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >People are going</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-4 h-4 text-text_color text-opacity-75"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                          </svg>
+                        </i>
+                        <span
+                          class="text-text_color text-opacity-75 text-sm font-normal font-poppins"
+                          >Registration closing in May 1, 2023</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="item_cate border-t border-t-border_color border-opacity-30 flex items-center divide-x divide-text_color divide-opacity-30"
+                >
+                  <a
+                    href="#0"
+                    class="text-theme_color text-base font-medium font-poppins w-1/2 text-center p-3"
+                    >Participate</a
+                  >
+                  <a
+                    href="#0"
+                    class="text-text_color text-base font-medium font-poppins flex items-center justify-center p-3 gap-2 w-1/2"
+                  >
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-4 h-4 text-text_color"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                        />
+                      </svg>
+                    </i>
+                    Share
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- event area ends  -->
+
+    <!-- optional js -->
+    <script src="../src/js/swiper-bundle.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".event_slider", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
