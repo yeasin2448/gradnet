@@ -237,9 +237,9 @@
     <!-- banner area ends  -->
 
     <!-- event area start -->
-    <section class="event_area py-10">
-      <div class="container mx-auto">
-        <div class="event_slider swiper mySwiper">
+    <section class="event_area md:pb-0 pb-14">
+      <div class="container mx-auto relative">
+        <div class="event_slider swiper mySwiper py-[60px!important]">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div
@@ -304,7 +304,9 @@
                         >May 3, 2023</span
                       >
                     </div>
-                    <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2"
+                    >
                       <div class="flex items-center gap-1">
                         <strong class="text-theme_color">1</strong>
                         <span
@@ -433,7 +435,9 @@
                         >May 3, 2023</span
                       >
                     </div>
-                    <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2"
+                    >
                       <div class="flex items-center gap-1">
                         <strong class="text-theme_color">1</strong>
                         <span
@@ -562,7 +566,9 @@
                         >May 3, 2023</span
                       >
                     </div>
-                    <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2"
+                    >
                       <div class="flex items-center gap-1">
                         <strong class="text-theme_color">1</strong>
                         <span
@@ -691,7 +697,9 @@
                         >May 3, 2023</span
                       >
                     </div>
-                    <div class="flex items-center justify-between gap-2">
+                    <div
+                      class="flex flex-wrap items-center justify-between gap-2"
+                    >
                       <div class="flex items-center gap-1">
                         <strong class="text-theme_color">1</strong>
                         <span
@@ -758,11 +766,269 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination top-full"></div>
         </div>
+        <div
+          class="swiper-button-next style_one bg-white shadow-theme_shadow h-[60px!important] w-[60px!important] rounded-full max-md:top-[95%!important]"
+        ></div>
+        <div
+          class="swiper-button-prev style_one bg-white shadow-theme_shadow h-[60px!important] w-[60px!important] rounded-full max-md:top-[95%!important]"
+        ></div>
       </div>
     </section>
     <!-- event area ends  -->
+
+    <!-- globe network start -->
+    <section class="bg-[#f9fafd] lg:py-20 py-12">
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-9 grid-cols-2 lg:gap-10 gap-6">
+          <div class="md:col-span-4 col-span-2 md:order-1 order-2">
+            <div class="text_content max-w-[354px] ml-0">
+              <h4
+                class="text-[#344050] xl:text-4xl lg:text-3xl text-2xl font-medium font-poppins"
+              >
+                Your Network <br />
+                Around the Globe
+              </h4>
+              <p
+                class="text-[#9da9bb] md:text-base text-sm font-medium font-poppins my-3"
+              >
+                Easily Find your Connections Everywhere
+              </p>
+              <ul class="flex items-center gap-3 divide-x my-8">
+                <li>
+                  <p
+                    class="text-theme_color lg:text-3xl md:text-2xl text-xl font-medium font-poppins"
+                  >
+                    50
+                  </p>
+                  <span class="text-[#9da9bb] text-sm font-medium font-poppins"
+                    >Members</span
+                  >
+                </li>
+                <li class="pl-3">
+                  <p
+                    class="text-theme_color lg:text-3xl md:text-2xl text-xl font-medium font-poppins"
+                  >
+                    9
+                  </p>
+                  <span class="text-[#9da9bb] text-sm font-medium font-poppins"
+                    >Organization</span
+                  >
+                </li>
+                <li class="pl-3">
+                  <p
+                    class="text-theme_color lg:text-3xl md:text-2xl text-xl font-medium font-poppins"
+                  >
+                    4
+                  </p>
+                  <span class="text-[#9da9bb] text-sm font-medium font-poppins"
+                    >Initiatives</span
+                  >
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="bg-theme_color py-3 px-4 rounded-md text-white text-sm font-medium font-poppins flex items-center justify-center gap-2 w-full"
+              >
+                Join your community
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </i>
+              </button>
+            </div>
+          </div>
+          <div class="md:col-span-5 col-span-2 md:order-2 order-1">
+            <div
+              class="our_glob_map rounded-md border border-theme_color border-opacity-60"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8740308756455!2d-0.07431928777881495!3d51.5155270099921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d223da79295%3A0xa96d6f1138343d68!2sBritish%20Marketplace!5e0!3m2!1sen!2sbd!4v1685947209901!5m2!1sen!2sbd"
+                class="w-full h-[350px]"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- globe network ends  -->
+
+    <!-- news blog area start -->
+    <section class="news_blog lg:py-20 py-10">
+      <div class="container mx-auto">
+        <div class="section_header max-w-[500px] mx-auto text-center">
+          <h3
+            class="text-[#344050] xl:text-4xl lg:text-3xl text-2xl font-medium font-poppins"
+          >
+            Latest news about your <br />
+            community
+          </h3>
+        </div>
+        <div class="section_wrapper mt-12">
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+            <div class="blog_item border border-border_color rounded-md">
+              <div class="item_thumb">
+                <img
+                  class="w-full rounded-tl-md rounded-tr-md"
+                  src="../src/img/blog/blog-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="item_text">
+                <div class="p-5">
+                  <a href="#0">
+                    <h4
+                      class="text-[#4d5969] xl:text-xl md:text-lg text-base font-medium font-poppins pb-3"
+                    >
+                      Mentoring is a great way for our alumni community to
+                      connect with each other and our students.
+                    </h4>
+                  </a>
+                  <p class="text-[#9da9bb] text-base font-medium font-poppins">
+                    We caught up with MBA graduate and podcaster, Reza Haque,
+                    and second-year Fine Art student
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="p-5 rounded-bl-md rounded-br-md border border-t text-theme_color flex items-center gap-2 text-sm font-medium font-poppins"
+                >
+                  Read more
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5 text-theme_color"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="blog_item border border-border_color rounded-md">
+              <div class="item_thumb">
+                <img
+                  class="w-full rounded-tl-md rounded-tr-md"
+                  src="../src/img/blog/blog-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="item_text">
+                <div class="p-5">
+                  <a href="#0">
+                    <h4
+                      class="text-[#4d5969] xl:text-xl md:text-lg text-base font-medium font-poppins pb-3"
+                    >
+                      Mentoring is a great way for our alumni community to
+                      connect with each other and our students.
+                    </h4>
+                  </a>
+                  <p class="text-[#9da9bb] text-base font-medium font-poppins">
+                    We caught up with MBA graduate and podcaster, Reza Haque,
+                    and second-year Fine Art student
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="p-5 rounded-bl-md rounded-br-md border border-t text-theme_color flex items-center gap-2 text-sm font-medium font-poppins"
+                >
+                  Read more
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5 text-theme_color"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="blog_item border border-border_color rounded-md">
+              <div class="item_thumb">
+                <img
+                  class="w-full rounded-tl-md rounded-tr-md"
+                  src="../src/img/blog/blog-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="item_text">
+                <div class="p-5">
+                  <a href="#0">
+                    <h4
+                      class="text-[#4d5969] xl:text-xl md:text-lg text-base font-medium font-poppins pb-3"
+                    >
+                      Mentoring is a great way for our alumni community to
+                      connect with each other and our students.
+                    </h4>
+                  </a>
+                  <p class="text-[#9da9bb] text-base font-medium font-poppins">
+                    We caught up with MBA graduate and podcaster, Reza Haque,
+                    and second-year Fine Art student
+                  </p>
+                </div>
+                <a
+                  href="#0"
+                  class="p-5 rounded-bl-md rounded-br-md border border-t text-theme_color flex items-center gap-2 text-sm font-medium font-poppins"
+                >
+                  Read more
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5 text-theme_color"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news blog area ends  -->
 
     <!-- optional js -->
     <script src="../src/js/swiper-bundle.js"></script>
@@ -775,8 +1041,12 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         breakpoints: {
-          640: {
+          576: {
             slidesPerView: 2,
             spaceBetween: 20,
           },

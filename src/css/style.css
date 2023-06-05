@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*== swiper navigation ==*/
+.swiper-button-next.style_one::after,
+.swiper-button-prev.style_one::after {
+  font-size: 20px;
+}

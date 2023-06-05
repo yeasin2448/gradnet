@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     container: {
       padding: {
-        DEFAULT: ".5rem",
+        DEFAULT: ".75rem",
         sm: "1rem",
         lg: "1.5rem",
         xl: "2rem",
@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     screens: {
-      xxs: "320px",
+      xxs: "375px",
       xs: "425px",
       sm: "576px",
       md: "768px",
@@ -34,6 +34,9 @@ module.exports = {
         primary_color: "#0DC1D9",
         text_color: "#5e6e82",
         border_color: "#344050",
+      },
+      boxShadow: {
+        theme_shadow: "0px 0px 15px rgba(46, 49, 146, 0.06);",
       },
     },
   },
