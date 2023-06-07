@@ -5,6 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.left_position {
+  left: -300px;
+}
+
+@media (max-width: 991px) {
+  .left_position {
+    left: -400px;
+  }
+}
+
 /*== swiper navigation ==*/
 .swiper-button-next.style_one::after,
 .swiper-button-prev.style_one::after {
