@@ -39,7 +39,7 @@
               <li>
                 <a
                   href="contact.html"
-                  class="text-black text-opacity-80 text-[13.5px] lg:py-6 py-1 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                  class="text-[#0000008c] text-opacity-80 text-[13.5px] lg:py-6 py-1 inline-block font font-semibold font-poppins hover:text-black transition-all"
                   >Contact</a
                 >
               </li>
@@ -88,7 +88,7 @@
               <li>
                 <a
                   href="offers.html"
-                  class="text-[#0000008c] text-opacity-80 text-[13.5px] lg:py-6 py-1 inline-block font font-semibold font-poppins hover:text-black transition-all"
+                  class="text-black text-opacity-80 text-[13.5px] lg:py-6 py-1 inline-block font font-semibold font-poppins hover:text-black transition-all"
                   >Offer</a
                 >
               </li>
@@ -141,42 +141,241 @@
     </header>
     <!-- header area ends  -->
 
-    <!-- contact area start -->
+    <!-- directory area start -->
     <section
-      class="contact_area bg-[#f9fafd] lg:py-24 pt-[120px!important] py-16"
+      class="directory_area bg-[#f9fafd] lg:py-24 pt-[120px!important] py-16"
     >
       <div class="container mx-auto">
-        <div class="secttion_wrapper max-w-[640px] mx-auto text-center">
-          <div class="page_header">
-            <h4
-              class="text-[#344050] lg:text-3xl md:text-2xl text-xl font-normal font-poppins pb-4"
+        <div class="section_header pb-10 text-center">
+          <h4
+            class="text-[#344050] lg:text-3xl md:text-2xl text-xl font-medium font-poppins"
+          >
+            Offers for the Members
+          </h4>
+        </div>
+        <div class="section_wrapper">
+          <div class="card_bar">
+            <div
+              class="card_nav director_nav flex flex-wrap items-center justify-center gap-4"
             >
-              Contact
-            </h4>
-            <p class="text-[#5e6e82] text-xl font-light font-poppins">
-              IUT Alumni Association
-            </p>
-          </div>
-          <div
-            class="text_content text-[#5e6e82] text-base leading-normal font-light font-poppins text-center pt-10"
-          >
-            <h4 class="font-semibold">Dr. Nazmul Arefin Momel</h4>
-            <p>President,</p>
-            <p>IUT Alumni Association</p>
-            <p>president@iutaa.com</p>
-          </div>
-          <div
-            class="text_content text-[#5e6e82] text-base leading-normal font-light font-poppins text-center pt-7"
-          >
-            <h4 class="font-semibold">Dr. Nazmul Arefin Momel</h4>
-            <p>President,</p>
-            <p>IUT Alumni Association</p>
-            <p>president@iutaa.com</p>
+              <button
+                type="button"
+                id="tab1-link"
+                class="tab_link text-sm font-medium font-poppins shadow-bmpshadow rounded px-4 py-2 active"
+                onclick="changeTab(0)"
+              >
+                All Offers
+              </button>
+              <button
+                type="button"
+                id="tab2-link"
+                class="tab_link text-sm font-medium font-poppins shadow-bmpshadow rounded px-4 py-2"
+                onclick="changeTab(1)"
+              >
+                Shopping
+              </button>
+              <button
+                type="button"
+                id="tab3-link"
+                class="tab_link text-sm font-medium font-poppins shadow-bmpshadow rounded px-4 py-2"
+                onclick="changeTab(2)"
+              >
+                Restaurants
+              </button>
+              <button
+                type="button"
+                id="tab4-link"
+                class="tab_link text-sm font-medium font-poppins shadow-bmpshadow rounded px-4 py-2"
+                onclick="changeTab(3)"
+              >
+                Hotels
+              </button>
+              <button
+                type="button"
+                id="tab5-link"
+                class="tab_link text-sm font-medium font-poppins shadow-bmpshadow rounded px-4 py-2"
+                onclick="changeTab(4)"
+              >
+                Travels
+              </button>
+              <button
+                type="button"
+                id="tab5-link"
+                class="tab_link text-sm font-medium font-poppins shadow-bmpshadow rounded px-4 py-2"
+                onclick="changeTab(4)"
+              >
+                Hospital
+              </button>
+            </div>
+            <div class="card_nav_panel mt-12">
+              <div id="tab1" class="tab-content">
+                <div class="shadow-theme_shadow rounded-md border">
+                  <div class="flex flex-col justify-center items-center">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-40 h-40 text-text_color text-opacity-40"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        />
+                      </svg>
+                    </i>
+                    <p
+                      class="text-text_color text-opacity-30 text-xl font-normal font-poppins pb-4"
+                    >
+                      No Deals found
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab2" class="tab-content hidden">
+                <div class="shadow-theme_shadow rounded-md border">
+                  <div class="flex flex-col justify-center items-center">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-40 h-40 text-text_color text-opacity-40"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        />
+                      </svg>
+                    </i>
+                    <p
+                      class="text-text_color text-opacity-30 text-xl font-normal font-poppins pb-4"
+                    >
+                      No Deals found
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab3" class="tab-content hidden">
+                <div class="shadow-theme_shadow rounded-md border">
+                  <div class="flex flex-col justify-center items-center">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-40 h-40 text-text_color text-opacity-40"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        />
+                      </svg>
+                    </i>
+                    <p
+                      class="text-text_color text-opacity-30 text-xl font-normal font-poppins pb-4"
+                    >
+                      No Deals found
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab4" class="tab-content hidden">
+                <div class="shadow-theme_shadow rounded-md border">
+                  <div class="flex flex-col justify-center items-center">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-40 h-40 text-text_color text-opacity-40"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        />
+                      </svg>
+                    </i>
+                    <p
+                      class="text-text_color text-opacity-30 text-xl font-normal font-poppins pb-4"
+                    >
+                      No Deals found
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab5" class="tab-content hidden">
+                <div class="shadow-theme_shadow rounded-md border">
+                  <div class="flex flex-col justify-center items-center">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-40 h-40 text-text_color text-opacity-40"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        />
+                      </svg>
+                    </i>
+                    <p
+                      class="text-text_color text-opacity-30 text-xl font-normal font-poppins pb-4"
+                    >
+                      No Deals found
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="tab6" class="tab-content hidden">
+                <div class="shadow-theme_shadow rounded-md border">
+                  <div class="flex flex-col justify-center items-center">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-40 h-40 text-text_color text-opacity-40"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                        />
+                      </svg>
+                    </i>
+                    <p
+                      class="text-text_color text-opacity-30 text-xl font-normal font-poppins pb-4"
+                    >
+                      No Deals found
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- contact area ends  -->
+    <!-- directory area ends  -->
 
     <!-- footer area start -->
     <footer class="bg-[#0b1727]">
@@ -415,6 +614,30 @@
 
     <!-- optional js -->
     <script>
+      // committee tabs js
+      function changeTab(tabIndex) {
+        // Hide all tab contents
+        var tabContents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < tabContents.length; i++) {
+          tabContents[i].classList.add("hidden");
+        }
+
+        // Show the selected tab content
+        var selectedTab = document.getElementById("tab" + (tabIndex + 1));
+        selectedTab.classList.remove("hidden");
+
+        // Add active class to the selected tab link
+        var tabLinks = document.getElementsByClassName("tab_link");
+        for (var i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].classList.remove("active");
+        }
+
+        var selectedTabLink = document.getElementById(
+          "tab" + (tabIndex + 1) + "-link"
+        );
+        selectedTabLink.classList.add("active");
+      }
+
       // mobile menu js
       let menuBar = document.getElementById("toggle_bars");
       let mainMenu = document.getElementById("toggle_menu");

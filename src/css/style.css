@@ -9,6 +9,17 @@
   left: -300px;
 }
 
+.card_nav.director_nav button.tab_link {
+  color: #1a68ce;
+  border: 1px solid #1a68ce;
+}
+
+.card_nav.director_nav button.tab_link:hover,
+.card_nav.director_nav button.tab_link.active {
+  color: white;
+  background: #1a68ce;
+}
+
 @media (max-width: 991px) {
   .left_position {
     left: -400px;
