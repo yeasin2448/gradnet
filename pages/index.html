@@ -95,8 +95,12 @@
                 >
               </li>
             </ul>
-            <div class="auth_dropdown">
-              <button type="button" class="flex items-center gap-1 group">
+            <div class="auth_dropdown relative">
+              <button
+                id="auth_drop"
+                type="button"
+                class="flex items-center gap-1 group"
+              >
                 <span
                   class="text-[#0000008c] text-sm font-medium font-poppins group-hover:text-black transition-all"
                 >
@@ -118,6 +122,27 @@
                   </svg>
                 </i>
               </button>
+              <div
+                class="drop_content bg-white rounded-md p-4 absolute top-[50px] right-0 min-w-[20rem] shadow-theme_shadow z-20 after:absolute after:block after:w-4 after:h-4 after:top-[-0.375rem] after:left-auto after:rotate-[45deg] after:bg-[#f9fafd] after:border-solid opacity-0"
+              >
+                <div class="flex items-center justify-between gap-2">
+                  <h4
+                    class="text-[#344050] xl:text-2xl text-xl font-medium font-poppins"
+                  >
+                    Login
+                  </h4>
+                  <div class="flex items-center gap-1">
+                    <span class="text-[#748194] text-xs font-light font-poppins"
+                      >or</span
+                    >
+                    <a
+                      href="#0"
+                      class="text-theme_color text-xs font-light font-poppins"
+                      >create an account</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="lg:hidden">
