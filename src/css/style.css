@@ -31,3 +31,11 @@
 .swiper-button-prev.style_one::after {
   font-size: 20px;
 }
+
+/*== auth dropdown css ==*/
+button.auth_btn.active span {
+  color: #1a68ce !important;
+}
+button.auth_btn.active i svg {
+  fill: #1a68ce !important;
+}

@@ -99,7 +99,7 @@
               <button
                 id="auth_drop"
                 type="button"
-                class="flex items-center gap-1 group"
+                class="auth_btn flex items-center gap-1 group"
               >
                 <span
                   class="text-[#0000008c] text-sm font-medium font-poppins group-hover:text-black transition-all"
@@ -123,9 +123,10 @@
                 </i>
               </button>
               <div
-                class="drop_content bg-white rounded-md p-4 absolute top-[50px] right-0 min-w-[20rem] shadow-theme_shadow z-20 after:absolute after:block after:w-4 after:h-4 after:top-[-0.375rem] after:left-auto after:rotate-[45deg] after:bg-[#f9fafd] after:border-solid opacity-0"
+                id="dropdown_content"
+                class="drop_content bg-white rounded-md p-4 absolute top-[50px] right-0 min-w-[22rem] shadow-theme_shadow z-20 opacity-0 after:absolute after:block after:w-4 after:h-4 after:top-[-0.375rem] after:left-auto after:right-4 after:rotate-[45deg] after:bg-[#f9fafd] after:border-solid"
               >
-                <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center justify-between gap-2 mb-8">
                   <h4
                     class="text-[#344050] xl:text-2xl text-xl font-medium font-poppins"
                   >
@@ -142,6 +143,35 @@
                     >
                   </div>
                 </div>
+                <form class="flex flex-col gap-5" action="" method="post">
+                  <div class="input_group">
+                    <input
+                      type="email"
+                      class="text-base font-normal font-poppins border border-[#d8e2ef] text-[#344050] rounded-md bg-white leading-normal p-2 h-10 w-full focus:outline-none focus:border-theme_color"
+                      placeholder="Email address"
+                    />
+                  </div>
+                  <div class="input_group">
+                    <input
+                      type="password"
+                      class="text-base font-normal font-poppins border border-[#d8e2ef] text-[#344050] rounded-md bg-white leading-normal p-2 h-10 w-full focus:outline-none focus:border-theme_color"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="input_btn">
+                    <button
+                      type="button"
+                      class="bg-theme_color text-white text-sm font-medium font-poppins py-2 px-6 w-full rounded-md"
+                    >
+                      Log in
+                    </button>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-theme_color text-sm font-light font-poppins inline-block text-center"
+                    >Forgot password?</a
+                  >
+                </form>
               </div>
             </div>
           </div>
@@ -1832,6 +1862,22 @@
       menuBar.addEventListener("click", () => {
         mainMenu.classList.toggle("left-0");
         mainMenu.classList.toggle("left_position");
+      });
+
+      // auth dropdown js
+      let authBtn = document.getElementById("auth_drop");
+      let dropContent = document.getElementById("dropdown_content");
+      let dropBody = document.getElementsByTagName("body");
+
+      authBtn.addEventListener("click", () => {
+        authBtn.classList.toggle("active");
+        dropContent.classList.toggle("opacity-0");
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === dropBody) {
+          dropContent.classList.remove("opacity-0");
+        }
       });
     </script>
   </body>
