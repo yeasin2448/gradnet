@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/custom.css" />
+    <title>Gradnet</title>
+  </head>
+  <body>
+    <!-- profile header start -->
+    <header class="profile_headre border-b bg-white">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between py-3">
+          <div class="logo_area">
+            <div class="cr_dropdown relative">
+              <button
+                type="button"
+                id="crBtn"
+                class="cr_btn text-text_colors text-sm font-normal font-poppins flex items-center gap-2"
+              >
+                <img src="../src/img/logo/logo.png" class="w-10" alt="" />
+                <span class="md:block hidden">Alumin Association</span>
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="none"
+                    class="w-[14px] h-[14px] fill-[#0000008c] group-hover:fill-black"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    ></path>
+                  </svg>
+                </i>
+              </button>
+              <div
+                id="crContent"
+                class="cr_content bg-white shadow-primary_shadow absolute top-10 left-0 min-w-[250px] py-2 rounded-md opacity-0"
+              >
+                <a
+                  href="#0"
+                  class="block bg-[#edf2f9] py-1 px-2 text-text_color text-sm font-normal font-poppins hover:bg-[#edf2f9] transition-all"
+                >
+                  Alumni Association
+                </a>
+                <a
+                  href="#0"
+                  class="block bg-transparent py-1 px-2 text-text_color text-sm font-normal font-poppins hover:bg-[#edf2f9] transition-all"
+                >
+                  IBA Alumni Association
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="profile_menu flex items-center gap-3">
+            <a
+              href="#0"
+              class="flex items-center gap-1 text-sm font-medium font-poppins text-[#0000008c]"
+            >
+              <i>
+                <svg
+                  data-icon="address-book"
+                  class="w-4 h-4"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M436 160c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20zm-228-32c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"
+                  ></path>
+                </svg>
+              </i>
+              <span class="md:block hidden">Members</span>
+            </a>
+            <a href="/pages/index.html" class="text-[#0000008c] text-sm">
+              <svg
+                data-icon="home"
+                class="h-4 w-4"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                ></path>
+              </svg>
+            </a>
+            <div class="relative">
+              <a href="#0" class="text-[#0000008c]">
+                <svg
+                  data-icon="bell"
+                  class="h-7 w-7"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  style="transform-origin: 0.4375em 0.5em"
+                >
+                  <g transform="translate(224 256)">
+                    <g
+                      transform="translate(0, 0)  scale(0.625, 0.625)  rotate(0 0 0)"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"
+                        transform="translate(-224 -256)"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <span
+                class="bg-[#f5803e] absolute top-0 right-0 h-4 w-4 rounded-full text-white text-[10px] flex items-center justify-center font-medium font-poppins"
+              >
+                01
+              </span>
+            </div>
+            <div class="profile_dropdown relative">
+              <button
+                type="button"
+                id="profileBtn"
+                class="profile_btn flex items-center gap-1"
+              >
+                <img
+                  src="../src/img/member/testi-3.jpg"
+                  class="w-8 h-8 rounded-full"
+                  alt="user-image"
+                />
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="none"
+                    class="w-[10px] h-[10px] fill-[#0000008c] group-hover:fill-black"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    ></path>
+                  </svg>
+                </i>
+              </button>
+              <div
+                id="profileContent"
+                class="profile_content bg-white shadow-primary_shadow rounded-md py-3 absolute top-10 right-0 min-w-[200px] z-50 opacity-0"
+              >
+                <ul
+                  class="flex flex-col gap-2 text-[#5e6e82] text-sm font-normal font-poppins"
+                >
+                  <li>
+                    <a
+                      href="#0"
+                      class="hover:bg-[#edf2f9] hover:text-[#232e3c] px-3 py-1 block"
+                      >My profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#0"
+                      class="hover:bg-[#edf2f9] hover:text-[#232e3c] px-3 py-1 block"
+                      >Edit profile</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#0"
+                      class="hover:bg-[#edf2f9] hover:text-[#232e3c] px-3 py-1 block"
+                      >Update Password</a
+                    >
+                  </li>
+                  <li class="border-t">
+                    <a
+                      href="#0"
+                      class="text-[#e63757] hover:bg-[#edf2f9] hover:text-[#232e3c] px-3 py-1 mt-2 block"
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- profile header ends  -->
+
+    <!-- profile dashboard start -->
+    <div class="profile_dashboard relative pt-8">
+      <div class="container mx-auto">
+        <div
+          class="top-[85px] pt-0 fixed w-full max-h-screen max-w-[230px] xl:block hidden"
+        >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat,
+            deserunt?
+          </p>
+        </div>
+        <div class="xl:ml-[250px]">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat,
+            deserunt?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- profile dashboard ends  -->
+
+    <script>
+      // cr dropdown js
+      let crBtn = document.getElementById("crBtn");
+      let crContent = document.getElementById("crContent");
+
+      crBtn.addEventListener("click", () => {
+        crContent.classList.toggle("opacity-0");
+      });
+
+      // Add event listener to document for hiding the dropdown when clicking outside of it
+      document.addEventListener("click", function (event) {
+        if (
+          !crBtn.contains(event.target) &&
+          !crContent.contains(event.target)
+        ) {
+          crContent.classList.add("opacity-0");
+        }
+      });
+
+      //   profile dropdown js
+      let profileBtn = document.getElementById("profileBtn");
+      let profileContent = document.getElementById("profileContent");
+
+      profileBtn.addEventListener("click", () => {
+        profileContent.classList.toggle("opacity-0");
+      });
+      document.addEventListener("click", (event) => {
+        if (
+          !profileBtn.contains(event.target) &&
+          !profileContent.contains(event.target)
+        ) {
+          profileContent.classList.add("opacity-0");
+        }
+      });
+    </script>
+  </body>
+</html>

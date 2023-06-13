@@ -159,12 +159,12 @@
                     />
                   </div>
                   <div class="input_btn">
-                    <button
-                      type="button"
-                      class="bg-theme_color text-white text-sm font-medium font-poppins py-2 px-6 w-full rounded-md"
+                    <a
+                      href="/profile-feed/profile-feed.html"
+                      class="bg-theme_color inline-block text-center text-white text-sm font-medium font-poppins py-2 px-6 w-full rounded-md"
                     >
                       Log in
-                    </button>
+                    </a>
                   </div>
                   <a
                     href="#"
@@ -1867,16 +1867,20 @@
       // auth dropdown js
       let authBtn = document.getElementById("auth_drop");
       let dropContent = document.getElementById("dropdown_content");
-      let dropBody = document.getElementsByTagName("body");
 
       authBtn.addEventListener("click", () => {
         authBtn.classList.toggle("active");
         dropContent.classList.toggle("opacity-0");
       });
 
-      window.addEventListener("click", (e) => {
-        if (e.target === dropBody) {
-          dropContent.classList.remove("opacity-0");
+      // Add event listener to document for hiding the dropdown when clicking outside of it
+      document.addEventListener("click", function (event) {
+        if (
+          !authBtn.contains(event.target) &&
+          !dropContent.contains(event.target)
+        ) {
+          dropContent.classList.add("opacity-0");
+          authBtn.classList.remove("active");
         }
       });
     </script>
