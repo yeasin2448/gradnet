@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../public/css/custom.css" />
     <title>Gradnet</title>
   </head>
-  <body>
+  <body class="bg-[#f9fafd]">
     <!-- profile header start -->
     <header class="profile_headre border-b bg-white">
       <div class="container mx-auto">
@@ -39,7 +39,7 @@
               </button>
               <div
                 id="crContent"
-                class="cr_content bg-white shadow-primary_shadow absolute top-10 left-0 min-w-[250px] py-2 rounded-md opacity-0"
+                class="cr_content bg-white shadow-primary_shadow absolute top-10 left-0 z-50 min-w-[250px] py-2 rounded-md opacity-0"
               >
                 <a
                   href="#0"
@@ -127,7 +127,7 @@
                 class="profile_btn flex items-center gap-1"
               >
                 <img
-                  src="../src/img/member/testi-3.jpg"
+                  src="../src/img/member/testi-2.jpg"
                   class="w-8 h-8 rounded-full"
                   alt="user-image"
                 />
@@ -195,12 +195,362 @@
     <div class="profile_dashboard relative pt-8">
       <div class="container mx-auto">
         <div
-          class="top-[85px] pt-0 fixed w-full max-h-screen max-w-[230px] xl:block hidden"
+          class="top-[85px] pt-0 fixed w-full max-h-[calc(100%_-_70px)] max-w-[230px] xl:block hidden overflow-hidden hover:overflow-auto"
         >
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat,
-            deserunt?
-          </p>
+          <div class="flex flex-col gap-5">
+            <div class="user_thumb_content border rounded-md bg-white">
+              <div class="user_thumb relative min-h-[100px]">
+                <div class="cover_img absolute inset-0">
+                  <img
+                    src="../src/img/profile/user_cover.jpg"
+                    class="w-full h-full rounded-tl-md rounded-tr-md"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="main_img absolute -bottom-10 left-1/2 -translate-x-1/2"
+                >
+                  <img
+                    src="../src/img/member/testi-2.jpg"
+                    class="w-20 h-20 rounded-full"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="user_des text-center mt-12 px-4 pb-4">
+                <h4 class="text-text_colors text-base font-medium font-poppins">
+                  Mrs. Mourin
+                </h4>
+                <a
+                  href="#0"
+                  class="text-theme_color text-sm font-medium font-poppins"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+            <div
+              class="auth_menu bg-white border border-th_border rounded-md p-4"
+            >
+              <ul
+                class="flex flex-col gap-2 text-text_color text-sm font-medium font-poppins"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="bg-[#2a7be41a] text-theme_color rounded-md py-[6px] px-3 flex items-center gap-2"
+                  >
+                    <i>
+                      <svg
+                        class="h-4 w-4 fill-theme_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M223.75 130.75L154.62 15.54A31.997 31.997 0 0 0 127.18 0H16.03C3.08 0-4.5 14.57 2.92 25.18l111.27 158.96c29.72-27.77 67.52-46.83 109.56-53.39zM495.97 0H384.82c-11.24 0-21.66 5.9-27.44 15.54l-69.13 115.21c42.04 6.56 79.84 25.62 109.56 53.38L509.08 25.18C516.5 14.57 508.92 0 495.97 0zM256 160c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm92.52 157.26l-37.93 36.96 8.97 52.22c1.6 9.36-8.26 16.51-16.65 12.09L256 393.88l-46.9 24.65c-8.4 4.45-18.25-2.74-16.65-12.09l8.97-52.22-37.93-36.96c-6.82-6.64-3.05-18.23 6.35-19.59l52.43-7.64 23.43-47.52c2.11-4.28 6.19-6.39 10.28-6.39 4.11 0 8.22 2.14 10.33 6.39l23.43 47.52 52.43 7.64c9.4 1.36 13.17 12.95 6.35 19.59z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>My Feed</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="address-book"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M436 160c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h320c26.5 0 48-21.5 48-48v-48h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-20v-64h20zm-228-32c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H118.4C106 384 96 375.4 96 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Members</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="umbrella"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M575.7 280.8C547.1 144.5 437.3 62.6 320 49.9V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v17.9C138.3 62.6 29.5 144.5.3 280.8c-2.2 10.1 8.5 21.3 18.7 11.4 52-55 107.7-52.4 158.6 37 5.3 9.5 14.9 8.6 19.7 0 20.2-35.4 44.9-73.2 90.7-73.2 58.5 0 88.2 68.8 90.7 73.2 4.8 8.6 14.4 9.5 19.7 0 51-89.5 107.1-91.4 158.6-37 10.3 10 20.9-1.3 18.7-11.4zM256 301.7V432c0 8.8-7.2 16-16 16-7.8 0-13.2-5.3-15.1-10.7-5.9-16.7-24.1-25.4-40.8-19.5-16.7 5.9-25.4 24.2-19.5 40.8 11.2 31.9 41.6 53.3 75.4 53.3 44.1 0 80-35.9 80-80V301.6c-9.1-7.9-19.8-13.6-32-13.6-12.3.1-22.4 4.8-32 13.7z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Mentors</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="briefcase"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Jobs</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="store"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 616 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Business</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="shopping-bag"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Offers</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="chart-pie"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 544 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Insight</span>
+                  </a>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="calendar-alt"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Event</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="hand-holding-heart"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M275.3 250.5c7 7.4 18.4 7.4 25.5 0l108.9-114.2c31.6-33.2 29.8-88.2-5.6-118.8-30.8-26.7-76.7-21.9-104.9 7.7L288 36.9l-11.1-11.6C248.7-4.4 202.8-9.2 172 17.5c-35.3 30.6-37.2 85.6-5.6 118.8l108.9 114.2zm290 77.6c-11.8-10.7-30.2-10-42.6 0L430.3 402c-11.3 9.1-25.4 14-40 14H272c-8.8 0-16-7.2-16-16s7.2-16 16-16h78.3c15.9 0 30.7-10.9 33.3-26.6 3.3-20-12.1-37.4-31.6-37.4H192c-27 0-53.1 9.3-74.1 26.3L71.4 384H16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h356.8c14.5 0 28.6-4.9 40-14L564 377c15.2-12.1 16.4-35.3 1.3-48.9z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Fundraising</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="address-card"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Membership</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="vote-yea"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M608 320h-64v64h22.4c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8H96v-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h576c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32zm-96 64V64.3c0-17.9-14.5-32.3-32.3-32.3H160.4C142.5 32 128 46.5 128 64.3V384h384zM211.2 202l25.5-25.3c4.2-4.2 11-4.2 15.2.1l41.3 41.6 95.2-94.4c4.2-4.2 11-4.2 15.2.1l25.3 25.5c4.2 4.2 4.2 11-.1 15.2L300.5 292c-4.2 4.2-11 4.2-15.2-.1l-74.1-74.7c-4.3-4.2-4.2-11 0-15.2z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Elections</span>
+                  </a>
+                </li>
+                <li>
+                  <hr />
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="tachometer-alt"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M288 32C128.94 32 0 160.94 0 320c0 52.8 14.25 102.26 39.06 144.8 5.61 9.62 16.3 15.2 27.44 15.2h443c11.14 0 21.83-5.58 27.44-15.2C561.75 422.26 576 372.8 576 320c0-159.06-128.94-288-288-288zm0 64c14.71 0 26.58 10.13 30.32 23.65-1.11 2.26-2.64 4.23-3.45 6.67l-9.22 27.67c-5.13 3.49-10.97 6.01-17.64 6.01-17.67 0-32-14.33-32-32S270.33 96 288 96zM96 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm48-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm246.77-72.41l-61.33 184C343.13 347.33 352 364.54 352 384c0 11.72-3.38 22.55-8.88 32H232.88c-5.5-9.45-8.88-20.28-8.88-32 0-33.94 26.5-61.43 59.9-63.59l61.34-184.01c4.17-12.56 17.73-19.45 30.36-15.17 12.57 4.19 19.35 17.79 15.17 30.36zm14.66 57.2l15.52-46.55c3.47-1.29 7.13-2.23 11.05-2.23 17.67 0 32 14.33 32 32s-14.33 32-32 32c-11.38-.01-20.89-6.28-26.57-15.22zM480 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="tachometer-alt"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M288 32C128.94 32 0 160.94 0 320c0 52.8 14.25 102.26 39.06 144.8 5.61 9.62 16.3 15.2 27.44 15.2h443c11.14 0 21.83-5.58 27.44-15.2C561.75 422.26 576 372.8 576 320c0-159.06-128.94-288-288-288zm0 64c14.71 0 26.58 10.13 30.32 23.65-1.11 2.26-2.64 4.23-3.45 6.67l-9.22 27.67c-5.13 3.49-10.97 6.01-17.64 6.01-17.67 0-32-14.33-32-32S270.33 96 288 96zM96 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm48-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm246.77-72.41l-61.33 184C343.13 347.33 352 364.54 352 384c0 11.72-3.38 22.55-8.88 32H232.88c-5.5-9.45-8.88-20.28-8.88-32 0-33.94 26.5-61.43 59.9-63.59l61.34-184.01c4.17-12.56 17.73-19.45 30.36-15.17 12.57 4.19 19.35 17.79 15.17 30.36zm14.66 57.2l15.52-46.55c3.47-1.29 7.13-2.23 11.05-2.23 17.67 0 32 14.33 32 32s-14.33 32-32 32c-11.38-.01-20.89-6.28-26.57-15.22zM480 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Admin panel</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="rounded-md py-[6px] px-3 flex items-center gap-2 hover:text-theme_color"
+                  >
+                    <i>
+                      <svg
+                        data-icon="cog"
+                        class="h-4 w-4 fill-text_color"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"
+                        ></path>
+                      </svg>
+                    </i>
+                    <span>Entities Configuration</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="xl:ml-[250px]">
           <p>
