@@ -39,3 +39,11 @@ button.auth_btn.active span {
 button.auth_btn.active i svg {
   fill: #1a68ce !important;
 }
+
+/*== multi step form css ==*/
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
