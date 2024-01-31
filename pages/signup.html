@@ -915,13 +915,7 @@
                 </div>
                 <div class="input_group sm:col-span-2">
                   <label for="pass_year" class="inline-block pb-1 text-sm text-black text-opacity-50 font-normal font-poppins">Passing Year</label>
-                  <input
-                    type="date"
-                    id="pass_year"
-                    name="passYear"
-                    placeholder=""
-                    class="border rounded-md h-10 w-full p-2 text-sm font-light font-poppins text-text_colors focus:outline-none focus:border-theme_color"
-                  />
+                  <select id="yearPicker" class="text-black font-normal font-poppins w-full border h-10 rounded-md p-2 focus:outline-none focus:border-theme_color"></select>
                 </div>
                 <div class="input_group sm:col-span-2">
                   <label for=""  class="inline-block pb-1 text-sm text-black text-opacity-50 font-normal font-poppins">membership type</label>
@@ -1016,6 +1010,23 @@
       });
   
       showStep(currentStep);
+
+      // Get the select element
+      var yearPicker = document.getElementById('yearPicker');
+      
+      // Get the current year
+      var currentYear = new Date().getFullYear();
+      
+      // Set the starting year
+      var startYear = 1900;
+  
+      // Populate the select element with years
+      for (var i = startYear; i <= currentYear; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.text = i;
+        yearPicker.appendChild(option);
+      }
     </script>
   </body>
 </html>
